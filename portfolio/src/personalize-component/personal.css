@@ -1,0 +1,38 @@
+.training-item{
+    color: black;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 4px;
+
+    i{
+        color: black;
+    }
+}
+
+.personalize{
+    height: 50vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    /* padding: 100px; */
+    /* margin-left: 6% */
+}
+
+.head1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.Personal{
+    width: 50%;
+    font-size: 25px;
+    font-family: sans-serif;
+    /* font-weight: bolder; */
+    /* text-align: center; */
+}
+
+.map-personalize{
+    width: 30%;
+    /* background-color: red; */
+}

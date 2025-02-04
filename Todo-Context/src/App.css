@@ -1,0 +1,23 @@
+.Todo-App-List{
+  width: 700px;
+  /* border: 2px solid black; */
+  margin-left: 620px;
+}
+
+.map-list{
+  width: 400px;
+
+}
+
+.h1-tag{
+  font-size: 20px;
+  /* margin-left: 20px; */
+  border: 2px solid black;
+  padding: 7px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+

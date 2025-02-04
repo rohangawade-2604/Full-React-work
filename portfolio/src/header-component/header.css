@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: black;
+    padding: 30px;
+    font-size: 20px;
+    text-align: end;
+    
+    
+}
+
+ul li{
+    display: inline;
+    margin-left: 8%;
+    /* border: 2px solid white; */
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 1s ease;
+    color: white;
+}
+
+ul li:hover{
+    background-color: white;
+    
+}
+
+.Link{
+    color: white;
+    text-decoration: none;
+    transition: all -1s ease;
+}
+
+.Link:hover{
+    color: black;
+}
+
+/*---------------------------------------*/
+

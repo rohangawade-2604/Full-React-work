@@ -1,0 +1,53 @@
+.head6{
+    font-size: 50px;
+}
+
+.para4{
+    font-size: 25px;
+}
+
+.card1{
+    height: 100vh;
+    /* margin: 20px; */
+    width: 100%;
+    /* border: 1px solid black; */
+    /* background-image: url(../assets/serv.jpg) */
+
+    ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 2px;
+        /* border: 2px solid black; */
+        
+        li, h2{
+            padding: 2px;
+           
+            
+        }
+    }
+}
+
+.con{
+    
+    margin-left: 5%;
+}
+
+hr{
+    opacity: 0.2;
+}
+#Serv-card1{
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white ;
+    background-color: black;
+    background-image: url(../assets/serv.jpg);
+    transition: all 1s ease-out;
+}
+
+#Serv-card1:hover{
+    transform: scale(1.1);
+}
+

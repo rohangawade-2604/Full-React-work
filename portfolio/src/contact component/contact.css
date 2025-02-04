@@ -1,0 +1,76 @@
+.contactpage{
+    height: 500px;
+    width: 100%;
+    /* background-color: blue; */
+    background-image: url("../assets/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    
+}
+
+.cont1{
+    position: absolute;
+    color: white;
+    bottom: 20%;
+    left: 15%;
+    font-size: 80px;
+    font-family: sans-serif;
+}
+
+.contact-full{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 30px; */
+    font-size: 20px;
+    align-items: center;
+
+}
+
+input[placeholder]{
+    /* padding: 15px 150px; */
+    width: 400px;
+    padding: 20px
+
+}
+
+#btn-sub{
+    margin-left: 27%;
+    padding: 10px 40px;
+    transition: all 1s ease-out;
+    border: 2px solid black;
+    background-color: gainsboro;
+}
+
+#btn-sub:hover{
+    background-color: black;
+    color: white;
+}
+
+.contact-us{
+    height: 500px;
+}
+
+#yes{
+    margin: 10px;
+    border: 2px solid black;
+    padding: 20px 20px;
+    transition: all 1s ease-out;
+    background-color:gainsboro;
+}
+
+#yes:hover{
+    background-color: black;
+    color: white;
+}
+
+#message{
+    padding:20px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+}
