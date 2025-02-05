@@ -10,7 +10,7 @@ export const Pagination = () => {
 
     const fetchData = async () => {
         try {
-            let Response = await axios.get("https://jsonplaceholder.typicode.com/posts?_limit=${page}&_page=${showContext.subpage}")
+            let Response = await axios.get(`https://jsonplaceholder.typicode.com/posts?_limit=${page}&_page=${showContext.subpage}`)
 
             const header = Response.headers;
 
