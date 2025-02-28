@@ -8,7 +8,7 @@ export const ContextProvider = (props) => {
 
     const [todo, setTodo] = useState([]);
 
-    const addTodos = (task) => {
+    const addTodos = (task) => {     
         setTodo([...todo, { "id": nanoid(), "task": task, "completed": false }])
         console.log(todo, "in Logic contaxt page")
     }
