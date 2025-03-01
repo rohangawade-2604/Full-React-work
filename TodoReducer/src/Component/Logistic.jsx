@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react'
 import { TodoReducer } from './Switch'
+import { useState } from 'react'
 
 export const Logistic = () => {
 
@@ -7,11 +8,13 @@ export const Logistic = () => {
 
       const [todo , dispatch ] = useReducer (TodoReducer , InitialState)  
       // inspite of state i have take todo in syntax
-      const [input , setInput] = useState('')
+      const [input , setInput] = useState('');
 
       const AddTodo = () => {
         if(input.trim()) {
-          dispatch({type: "ADDTODOS" , task : input})
+          dispatch({type: "ADDTODOS" ,task: input})
+          setInput('')
+          console.log(AddTodo, "is beeing showing")
         }
       }
 
@@ -22,8 +25,20 @@ export const Logistic = () => {
         <h1>TODOREDUCER LIST</h1>
 
         <input type="text" name='name' placeholder='Enter the Todo' 
-        />
-        <button > + </button>
+        onChange={(e) => setInput(e.target.value)}/>
+        <button onClick={AddTodo} > + </button>
+
+        <ul>
+          {todo.trend.map((el) => (
+            <li key={el.id}>
+              {el.task}
+              <button onClick={() => dispatch({type: "DELETETODO" , task: el.id})}> - </button>
+            </li>
+          
+          ))}
+
+          
+        </ul>
     </div>
   )
 }

@@ -48,9 +48,27 @@ input[placeholder] {
 button {
   margin: 17px;
   transition: all 1s ease-in-out;
+  border: 2px solid black;
 }
 
 button:hover{
   background-color: white;
   color: black;
+}
+
+ul{
+  margin-left: 27px;
+}
+
+
+li{
+  border: 2px solid black;
+  width: 250px;
+  margin: 10px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
 }
