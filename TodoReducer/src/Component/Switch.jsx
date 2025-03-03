@@ -13,6 +13,8 @@ export const TodoReducer = (state, action) => {
             console.log(DELETETODOS , "how its run")
             return {trend :state.trend.filter((todo) => todo.id !== action.task  )}
 
+        case "UPDATETODOS" :
+            return {trend: state.trend.map((todo) => (todo.id === action.id ? {...todo , task: action.updatetask}:todo))}        
         }
 
        
