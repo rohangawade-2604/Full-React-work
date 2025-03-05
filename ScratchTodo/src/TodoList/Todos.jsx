@@ -15,7 +15,7 @@ export const Todos = () => {
     const handleInput = () => {
         let values = inputCatch.current.value;
         dispatch(AddTodos(values));
-        inputCatch.current.values = "";
+        inputCatch.current.value = "";
         ContestDate.setData(state)
     };
     console.log(state , "checkmates")
