@@ -5,11 +5,12 @@ import App from './App.jsx'
 import { ContextProvider } from './Context-Component/Logic.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <ContextProvider>
-      <App />
-    </ContextProvider>
-  </StrictMode>,
+  <App />
+
+    //  <ContextProvider>
+             
+    // </ContextProvider> 
+
 )
 
 
