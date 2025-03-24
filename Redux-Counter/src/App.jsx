@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import { TodoList } from './Slice-Component/TodoList'
+import { TodoList } from './Slice-Component/CounterList'
 
 function App() {
  
