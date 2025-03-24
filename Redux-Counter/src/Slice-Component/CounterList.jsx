@@ -11,7 +11,7 @@ export const CounterList = () => {
     <div>
         <h1>Counter : {Count}</h1>
         <button onClick={() => dispatch(Increment())}>+</button>
-        <button onClick={() => dispatch(Decrement())}>-</button>
+        <button disabled= {Count === 0} onClick={() => dispatch(Decrement())}>-</button>
         <button onClick={() => dispatch(Reset())}>Reset</button>
     </div>
   )
