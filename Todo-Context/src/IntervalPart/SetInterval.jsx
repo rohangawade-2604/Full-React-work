@@ -3,14 +3,14 @@
   export const SetInterval = () => {
 
       const [count , setCount] = useState(0)
-      const [toggle , setToggle] = useState(false)
 
-    // useEffect(() => {
-    //   const id = setInterval(() => {
-    //     console.log("time is outed", Date.now())
-    //   },50000000)
-    //   return() => clearInterval(id)
-    // },[])
+
+    useEffect(() => {
+      const id = setInterval(() => {
+        console.log("time is outed", Date.now())
+      },50000000)
+      return() => clearInterval(id)
+    },[])
   
 
           
@@ -21,8 +21,9 @@
           <button onClick={() => setCount((prev) => prev+1 )}>+</button>
           <button onClick={() => setCount((prev) => prev-1)} disabled={count===0}>-</button>
           <button onClick={() => setCount(0)}>Reset</button>
-      
-          <button>Toggle</button>
+
+
+         
       </div>
     )
   }

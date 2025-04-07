@@ -9,7 +9,7 @@ export const Todos = () => {
     const ContestDate = useContext(TodoContext)
     const inputCatch = useRef("")
 
-    const [state , dispatch] = useReducer(Reducer , ContestDate.data)
+    
     console.log(ContestDate , "this is the form todo")
 
     const handleInput = () => {
