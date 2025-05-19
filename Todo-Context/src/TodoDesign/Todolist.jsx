@@ -31,26 +31,36 @@ const Todolist = () => {
 
   return (
     <div>
-      <div className="map-list ml-[37%] w-100 border-2">
+      <div className="map-list ml-[42%] mt-10  ">
         {
           data.todo.map((el) => (
-            <h1 key={el.id} className='h1-tag'>
+            
+            <h1 key={el.id} className='h1-tag w-70'>
 
 
               {editingId === el.id ? (
                 <>
-                  <input type="text"
+                <div>
+                  
+                </div>
+                <div>
+                    <input type="text"
                     value={array}
                     onChange={(e) => setArray(e.target.value)} className='border-2'/>
                   <button onClick={() => handleUpdates(el.id)} ><i class="fa-solid fa-pen-nib"></i></button>
+                </div>
+                
 
                 </>
 
               ) : (
                 <>
+                <div className='ml-5'>
                   {el.task}
-                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "80px" }}><i class="fa-solid fa-trash"></i></button>
-                  <button onClick={() => handleEdit(el.id, el.task)}>Edit</button>
+                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "80px" }} ><i className="fa-solid fa-trash ml-5"></i></button>
+                  <button onClick={() => handleEdit(el.id, el.task)} className='ml-6'>Edit</button>
+                </div>
+                  
 
                 </>
 
