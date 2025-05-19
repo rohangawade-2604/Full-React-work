@@ -54,7 +54,7 @@ const Todolist = () => {
 
               ) : (
                 <>
-                <div className='ml-5 gap-5 flex justify-between'>
+                <div className='ml-5 gap-5 flex justify-between '>
                   {el.task}
                   <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "80px" }} ><i className="fa-solid fa-trash "></i></button>
                   <button onClick={() => handleEdit(el.id, el.task)} className=''>Edit</button>
