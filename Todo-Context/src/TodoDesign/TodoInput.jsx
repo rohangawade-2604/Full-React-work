@@ -25,7 +25,7 @@ const TodoInput = () => {
 
     return (
         <>
-            <div className="Todo-App-List text-center  ">
+            <div className="Todo-App-List text-center pt-20 ">
                 <h1 className='mb-10 font-bold text-[25px]'>Todo List</h1>
 
                 <input type="text" value={task} placeholder='Enter the Value'

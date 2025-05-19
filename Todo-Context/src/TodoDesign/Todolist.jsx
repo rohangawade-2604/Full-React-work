@@ -31,22 +31,19 @@ const Todolist = () => {
 
   return (
     <div>
-      <div className="map-list ml-[42%] mt-10  ">
+      <div className="map-list ml-[42%] mt-10 ">
         {
           data.todo.map((el) => (
             
-            <h1 key={el.id} className='h1-tag w-70'>
+            <h1 key={el.id} className='h1-tag w-90 '>
 
 
               {editingId === el.id ? (
                 <>
-                <div>
-                  
-                </div>
-                <div>
+                <div className='ml-5 gap-5 flex justify-between'>
                     <input type="text"
                     value={array}
-                    onChange={(e) => setArray(e.target.value)} className='border-2'/>
+                    onChange={(e) => setArray(e.target.value)} className='border-2 '/>
                   <button onClick={() => handleUpdates(el.id)} ><i class="fa-solid fa-pen-nib"></i></button>
                 </div>
                 
@@ -55,10 +52,10 @@ const Todolist = () => {
 
               ) : (
                 <>
-                <div className='ml-5'>
+                <div className='ml-5 gap-5 flex justify-between'>
                   {el.task}
-                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "80px" }} ><i className="fa-solid fa-trash ml-5"></i></button>
-                  <button onClick={() => handleEdit(el.id, el.task)} className='ml-6'>Edit</button>
+                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "80px" }} ><i className="fa-solid fa-trash "></i></button>
+                  <button onClick={() => handleEdit(el.id, el.task)} className=''>Edit</button>
                 </div>
                   
 
