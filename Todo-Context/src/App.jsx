@@ -10,10 +10,6 @@ function App() {
     <>
       <TodoInput />
 
-    {toggle &&   <SetInterval/>}
-    <button onClick={() => {
-      setToggle((prev) => prev===setInterval)
-    }}>Toggle</button>
       
     </> 
   )

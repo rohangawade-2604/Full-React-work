@@ -31,7 +31,7 @@ const Todolist = () => {
 
   return (
     <div>
-      <div className="map-list">
+      <div className="map-list text-center">
         {
           data.todo.map((el) => (
             <h1 key={el.id} className='h1-tag'>
