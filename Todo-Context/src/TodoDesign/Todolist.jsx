@@ -31,7 +31,7 @@ const Todolist = () => {
 
   return (
     <div>
-      <div className="map-list text-center">
+      <div className="map-list ml-[37%] w-100 border-2">
         {
           data.todo.map((el) => (
             <h1 key={el.id} className='h1-tag'>
@@ -41,7 +41,7 @@ const Todolist = () => {
                 <>
                   <input type="text"
                     value={array}
-                    onChange={(e) => setArray(e.target.value)} />
+                    onChange={(e) => setArray(e.target.value)} className='border-2'/>
                   <button onClick={() => handleUpdates(el.id)} ><i class="fa-solid fa-pen-nib"></i></button>
 
                 </>
