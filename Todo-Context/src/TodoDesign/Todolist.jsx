@@ -31,11 +31,13 @@ const Todolist = () => {
 
   return (
     <div>
-      <div className="map-list ml-[42%] mt-10 ">
+      <div className="map-list ml-[42%] mt-10 max-sm:ml-10 max-sm:flex flex-col  ">
         {
           data.todo.map((el) => (
+
             
-            <h1 key={el.id} className='h1-tag w-90 '>
+            
+            <h1 key={el.id} className='h1-tag w-90 max-sm:w-85 '>
 
 
               {editingId === el.id ? (
@@ -43,7 +45,7 @@ const Todolist = () => {
                 <div className='ml-5 gap-5 flex justify-between'>
                     <input type="text"
                     value={array}
-                    onChange={(e) => setArray(e.target.value)} className='border-2 '/>
+                    onChange={(e) => setArray(e.target.value)} className='border-2 w-60'/>
                   <button onClick={() => handleUpdates(el.id)} ><i class="fa-solid fa-pen-nib"></i></button>
                 </div>
                 
