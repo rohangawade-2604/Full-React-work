@@ -25,7 +25,7 @@ const TodoInput = () => {
 
     return (
         <>
-            <div className="Todo-App-List text-center pt-20 ">
+            <div className="Todo-App-List text-center pt-20 max-sm:overflow-hidden"> 
                 <h1 className='mb-10 font-bold text-[25px]'>Todo List</h1>
 
                 <input type="text" value={task} placeholder='Enter the Value'
@@ -35,7 +35,7 @@ const TodoInput = () => {
                 <button onClick={HandleAdd} style={{ "marginLeft": "10px", "border": "2px solid black" }} ><i className="fa-solid fa-plus border-2 p-3"></i></button>
 
                 
-                <Todolist />
+                <Todolist   />
             </div>
 
         </>

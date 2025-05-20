@@ -31,42 +31,40 @@ const Todolist = () => {
 
   return (
     <div>
-      <div className="map-list ml-[42%] mt-10 max-sm:ml-10 max-sm:flex flex-col  ">
+      <div className="map-list ml-[42%] mt-10 max-sm:ml-10 max-sm:flex max-sm:flex-col max-sm:gap-5">
         {
           data.todo.map((el) => (
 
-            
-            
-            <h1 key={el.id} className='h1-tag w-90 max-sm:w-85 '>
+            <div className='w-40 max-sm:w-85 border-2 border-white p-2' key={el.id}>
+          
 
-
+            <div className=''>
+             
+              
               {editingId === el.id ? (
-                <>
-                <div className='ml-5 gap-5 flex justify-between'>
+             
+                <div className='ml-5 gap-5 '>
                     <input type="text"
                     value={array}
                     onChange={(e) => setArray(e.target.value)} className='border-2 w-60'/>
                   <button onClick={() => handleUpdates(el.id)} ><i class="fa-solid fa-pen-nib"></i></button>
                 </div>
-                
-
-                </>
-
+        
               ) : (
-                <>
-                <div className='ml-5 gap-5 flex justify-between '>
+               
+                <div className='ml-5 gap-5  '>
                   {el.task}
-                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "80px" }} ><i className="fa-solid fa-trash "></i></button>
-                  <button onClick={() => handleEdit(el.id, el.task)} className=''>Edit</button>
+                    
+                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "180px", }} ><i className="fa-solid fa-trash "></i></button>
+                  <button onClick={() => handleEdit(el.id, el.task)} className='ml-5'>Edit</button>
                 </div>
-                  
-
-                </>
 
               )}
+             
+            </div>
+            
 
-
-            </h1>
+             </div>
           ))
         }
       </div>
