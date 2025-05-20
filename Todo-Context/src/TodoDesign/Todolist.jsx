@@ -35,7 +35,7 @@ const Todolist = () => {
         {
           data.todo.map((el) => (
 
-            <div className='w-40 max-sm:w-85 border-2 border-white p-2' key={el.id}>
+            <div className='w-90 max-sm:w-85 border-2 border-white p-2' key={el.id}>
           
 
             <div className=''>
@@ -55,7 +55,7 @@ const Todolist = () => {
                 <div className='ml-5 gap-5  '>
                   {el.task}
                     
-                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "180px", }} ><i className="fa-solid fa-trash "></i></button>
+                  <button onClick={() => data.deleteTodos(el.id)} style={{ "marginLeft": "150px", }} ><i className="fa-solid fa-trash "></i></button>
                   <button onClick={() => handleEdit(el.id, el.task)} className='ml-5'>Edit</button>
                 </div>
 
@@ -63,7 +63,9 @@ const Todolist = () => {
              
             </div>
             
+             
 
+           
              </div>
           ))
         }
