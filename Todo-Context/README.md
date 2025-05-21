@@ -17,6 +17,10 @@ Context API is basically used to store the value , where it is used to store the
 
 2. In this I have create the context API by using createContext 
 
+3. After that I have create the concept of AddTodos , deleteTodos ,updateTodos which is stored globally
+
+
+
 
 
 
