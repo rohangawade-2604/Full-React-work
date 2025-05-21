@@ -9,4 +9,6 @@ Currently, two official plugins are available:
 
 # Done with Half of Responsiveness
 
+Todo-Context is the part where I am create the Todo list using Context API which is used to storing the value
+
 
