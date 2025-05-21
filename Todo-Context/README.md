@@ -15,6 +15,8 @@ Context API is basically used to store the value , where it is used to store the
 
 1. In this concept . I have create the Context-Component in this component , Create a Logic.jsx file...
 
+2. In this I have create the context API by using createContext 
+
 
 
 
