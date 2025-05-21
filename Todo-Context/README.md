@@ -19,7 +19,7 @@ Context API is basically used to store the value , where it is used to store the
 
 3. After that I have create the concept of AddTodos , deleteTodos ,updateTodos which is stored globally
 
-4. After this I have used into the Add todo into TodoInput.jsx and Todolist.jsx with deleteTodos and UpdateTodos respectively...
+4. After this I have used into the Add todo into TodoInput.jsx and Todolist.jsx with deleteTodos and UpdateTodos respectively...!
 
 
 
