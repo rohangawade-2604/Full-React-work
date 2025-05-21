@@ -11,4 +11,4 @@ Currently, two official plugins are available:
 
 Todo-Context is the part where I am create the Todo list using Context API which is used to storing the value
 
-
+Context API is basically used to store the value , where it is used to store the globally . from this concept , we cant pollute the components , and basically Context API avoids the props drilling concepts with it.
