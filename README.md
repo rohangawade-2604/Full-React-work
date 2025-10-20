@@ -12,6 +12,3 @@ hdhdjs
 nothinf
 dash
 checking 
-hdhdgdhd
-hshdhdhd
-bbghjh
